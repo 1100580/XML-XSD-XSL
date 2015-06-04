@@ -1,0 +1,21 @@
+body{
+	background-color:#E0E0E0;
+}
+
+h3{
+	text-align:center;
+}
+
+table,th,td{
+	text-align:center;
+	border:1px solid black;
+}
+
+th{
+	background-color:#A8A8A8;
+}
+
+p{
+	text-align:center;
+	font-weight:bold;
+}

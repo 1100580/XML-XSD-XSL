@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="XSL-ListagemClientesHTML.xsl"?>
+<Clientes>
+    <Cliente>
+        <DadosPessoais>
+            <Nome>Antonio</Nome>
+            <DataNascimento>01-01-1990</DataNascimento>
+            <BI>12345678</BI>
+            <Email>cenas@cenas.com</Email>
+            <Telefone>912223344</Telefone>
+        </DadosPessoais>
+        <Fotografia>foto1.jpe</Fotografia>
+        <Compras>
+            <Compra>
+                <Nome>Bicicleta 1</Nome>
+                <Quantidade>1</Quantidade>
+            </Compra>
+        </Compras>
+    </Cliente>
+    <Cliente>
+        <DadosPessoais>
+            <Nome>Joana</Nome>
+            <DataNascimento>23-12-1989</DataNascimento>
+            <BI>12345679</BI>
+            <Email>joana@hotmail.com</Email>
+            <Telefone>916789034</Telefone>
+        </DadosPessoais>
+        <Fotografia>foto1.jpe</Fotografia>
+        <Compras>
+            <Compra>
+                <Nome>Bicicleta 2</Nome>
+                <Quantidade>1</Quantidade>
+            </Compra>
+            <Compra>
+                <Nome>Componente 1</Nome>
+                <Quantidade>2</Quantidade>
+            </Compra>
+        </Compras>
+    </Cliente>
+    <Cliente>
+        <DadosPessoais>
+            <Nome>Jorge Silva</Nome>
+            <DataNascimento>28-09-1990</DataNascimento>
+            <BI>1556689</BI>
+            <Email>jorge@hotmail.com</Email>
+            <Telefone>915677890</Telefone>
+        </DadosPessoais>
+        <Fotografia>foto1.jpe</Fotografia>
+        <Compras>
+            <Compra>
+                <Nome>Bicicleta 3</Nome>
+                <Quantidade>1</Quantidade>
+            </Compra>
+            <Compra>
+                <Nome>Componente 9</Nome>
+                <Quantidade>2</Quantidade>
+            </Compra>
+        </Compras>
+    </Cliente>
+    <Cliente>
+        <DadosPessoais>
+            <Nome>Sara Silva</Nome>
+            <DataNascimento>06-06-1991</DataNascimento>
+            <BI>123434459</BI>
+            <Email>sara@hotmail.com</Email>
+            <Telefone>915678902</Telefone>
+        </DadosPessoais>
+        <Fotografia>foto1.jpe</Fotografia>
+        <Compras>
+            <Compra>
+                <Nome>Bicicleta 1</Nome>
+                <Quantidade>1</Quantidade>
+            </Compra>
+            <Compra>
+                <Nome>Componente 1</Nome>
+                <Quantidade>2</Quantidade>
+            </Compra>
+        </Compras>
+    </Cliente>
+</Clientes>

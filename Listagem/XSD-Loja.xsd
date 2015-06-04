@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="Loja">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clientes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cliente" maxOccurs="unbounded" type="TCliente"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Produtos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Bicicletas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Bicicleta" type="TBicicleta" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Componentes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Componente" type="TComponente" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Acessorios">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Acessorio" type="TAcessorio" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TCliente">
+    <xs:sequence>
+      <xs:element name='DadosPessoais' type="TDadosPessoais"/>
+      <xs:element name="Fotografia" type="xs:string"/>
+      <xs:element name="Compras" type="TCompras"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCompras">
+    <xs:sequence>
+      <xs:element name="Compra" type="TCompra" maxOccurs="20"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TCompra">
+    <xs:sequence>
+      <xs:element name="Nome" type="xs:string"/>
+      <xs:element name="Quantidade" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TBicicleta">
+    <xs:sequence>
+      <xs:element name="marca" type="TMarca"/>
+      <xs:element name="modelo" type="xs:string"/>
+      <xs:element name="preco" type="xs:double"/>
+      <xs:element name="quantidade" type="xs:int"/>
+      <xs:element name='Comps' type='TComps'/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+  <xs:complexType name="TComponente">
+    <xs:sequence>
+      <xs:element name='nome' type='xs:string'/>
+      <xs:element name="tipo" type="xs:string"/>
+      <xs:element name="codigo" type="xs:int"/>
+      <xs:element name="marca" type="TMarca"/>
+      <xs:element name="caracteristicas" type="xs:string"/>
+      <xs:element name="fotografia" type="xs:string"/>
+      <xs:element name="preco">
+        <xs:complexType>
+          <xs:attribute name="valor" type="xs:double" use="required"/>
+          <xs:attribute name="tipo" type="xs:string" default="unidade"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="quantidade" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TAcessorio">
+    <xs:sequence>
+      <xs:element name="nome" type="xs:string"/>
+      <xs:element name="tipo" type="xs:string"/>
+      <xs:element name="codigo" type="xs:int"/>
+      <xs:element name="preco">
+        <xs:complexType>
+          <xs:attribute name="valor" type="xs:double" use="required"/>
+          <xs:attribute name="tipo" type="xs:string" default="unidade"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name='quantidade' type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="TMarca">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Marca 1"/>
+      <xs:enumeration value="Marca 2"/>
+      <xs:enumeration value="Marca 3"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="TComps">
+    <xs:sequence>
+      <xs:element name="Comp" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="nome" type="xs:string"/>
+          <xs:attribute name="preco" type="xs:double"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TDadosPessoais">
+    <xs:sequence>
+      <xs:element name="Nome" type="xs:string"/>
+      <xs:element name="DataNascimento" type="TData"/>
+      <xs:element name="BI" type="xs:string"/>
+      <xs:element name="Email" type="TMail"/>
+      <xs:element name="Telefone" type="TTelefone"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="TMail">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TData">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([0-9]{2}-1[0-2]-[0-9]{4})|([0-9]{2}-0[1-9]-[0-9]{4})"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TTelefone">
+    <xs:restriction base="xs:string">
+      <xs:pattern value='[0-9]{9}'/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

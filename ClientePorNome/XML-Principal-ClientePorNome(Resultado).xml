@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="XSL-ClientePorNomeHTML.xsl"?>
+<Cliente>
+    <DadosPessoais>
+        <Nome>Jorge Silva</Nome>
+        <DataNascimento>28-09-1990</DataNascimento>
+        <BI>1556689</BI>
+        <Email>jorge@hotmail.com</Email>
+        <Telefone>915677890</Telefone>
+    </DadosPessoais>
+    <Fotografia>foto1.jpe</Fotografia>
+    <Compras>
+        <Compra>
+            <Nome>Bicicleta 3</Nome>
+            <Quantidade>1</Quantidade>
+        </Compra>
+        <Compra>
+            <Nome>Componente 9</Nome>
+            <Quantidade>2</Quantidade>
+        </Compra>
+    </Compras>
+</Cliente>

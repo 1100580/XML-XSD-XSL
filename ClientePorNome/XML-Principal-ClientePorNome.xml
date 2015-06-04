@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="XSL-ClientePorNomeXML.xsl"?>
+<Loja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSD-Loja.xsd">
+    <Clientes>
+        <Cliente>
+            <DadosPessoais>
+                <Nome>Antonio</Nome>
+                <DataNascimento>01-01-1990</DataNascimento>
+                <BI>12345678</BI>
+                <Email>cenas@cenas.com</Email>
+                <Telefone>912223344</Telefone>
+            </DadosPessoais>
+            <Fotografia>foto1.jpe</Fotografia>
+            <Compras>
+                <Compra>
+                    <Nome>Bicicleta 1</Nome>
+                    <Quantidade>1</Quantidade>
+                </Compra>
+            </Compras>
+        </Cliente>
+        <Cliente>
+            <DadosPessoais>
+                <Nome>Joana</Nome>
+                <DataNascimento>23-12-1989</DataNascimento>
+                <BI>12345679</BI>
+                <Email>joana@hotmail.com</Email>
+                <Telefone>916789034</Telefone>
+            </DadosPessoais>
+            <Fotografia>foto1.jpe</Fotografia>
+            <Compras>
+                <Compra>
+                    <Nome>Bicicleta 2</Nome>
+                    <Quantidade>1</Quantidade>
+                </Compra>
+                <Compra>
+                    <Nome>Componente 1</Nome>
+                    <Quantidade>2</Quantidade>
+                </Compra>
+            </Compras>
+        </Cliente>
+        <Cliente>
+            <DadosPessoais>
+                <Nome>Jorge Silva</Nome>
+                <DataNascimento>28-09-1990</DataNascimento>
+                <BI>1556689</BI>
+                <Email>jorge@hotmail.com</Email>
+                <Telefone>915677890</Telefone>
+            </DadosPessoais>
+            <Fotografia>foto1.jpe</Fotografia>
+            <Compras>
+                <Compra>
+                    <Nome>Bicicleta 3</Nome>
+                    <Quantidade>1</Quantidade>
+                </Compra>
+                <Compra>
+                    <Nome>Componente 9</Nome>
+                    <Quantidade>2</Quantidade>
+                </Compra>
+            </Compras>
+        </Cliente>
+        <Cliente>
+            <DadosPessoais>
+                <Nome>Sara Silva</Nome>
+                <DataNascimento>06-06-1991</DataNascimento>
+                <BI>123434459</BI>
+                <Email>sara@hotmail.com</Email>
+                <Telefone>915678902</Telefone>
+            </DadosPessoais>
+            <Fotografia>foto1.jpe</Fotografia>
+            <Compras>
+                <Compra>
+                    <Nome>Bicicleta 1</Nome>
+                    <Quantidade>1</Quantidade>
+                </Compra>
+                <Compra>
+                    <Nome>Componente 1</Nome>
+                    <Quantidade>2</Quantidade>
+                </Compra>
+            </Compras>
+        </Cliente>
+    </Clientes>
+    <Produtos>
+        <Bicicletas>
+            <Bicicleta name="Bicicleta 1">
+                <marca>Marca 1</marca>
+                <modelo>Modelo A</modelo>
+                <preco>30.50</preco>
+                <quantidade>3</quantidade>
+                <Comps>
+                    <Comp nome="Componente 1" preco="5.0"/>
+                    <Comp nome="Componente 2" preco="10.0"/>
+                    <Comp nome="Componente 3" preco="5.0"/>
+                    <Comp nome="Componente 4" preco="2.50"/>
+                    <Comp nome="Componente 5" preco="2.50"/>
+                </Comps>
+            </Bicicleta>
+            <Bicicleta  name="Bicicleta 2">
+                <marca>Marca 2</marca>
+                <modelo>Modelo B</modelo>
+                <preco>50.00</preco>
+                <quantidade>5</quantidade>
+                <Comps>
+                    <Comp nome="Componente 1" preco="5.0"/>
+                    <Comp nome="Componente 6" preco="10.0"/>
+                    <Comp nome="Componente 7" preco="5.0"/>
+                    <Comp nome="Componente 8" preco="2.50"/>
+                    <Comp nome="Componente 9" preco="2.50"/>
+                </Comps>
+            </Bicicleta>
+            <Bicicleta name="Bicicleta 3">
+                <marca>Marca 3</marca>
+                <modelo>Modelo C</modelo>
+                <preco>70.00</preco>
+                <quantidade>9</quantidade>
+                <Comps>
+                    <Comp nome="Componente 1" preco="5.0"/>
+                    <Comp nome="Componente 2" preco="10.0"/>
+                    <Comp nome="Componente 3" preco="5.0"/>
+                    <Comp nome="Componente 4" preco="2.50"/>
+                    <Comp nome="Componente 5" preco="2.50"/>
+                </Comps>
+            </Bicicleta>
+        </Bicicletas>
+        <Componentes>
+            <Componente>
+                <nome>Componente 1</nome>
+                <tipo>Tipo 1</tipo>
+                <codigo>1232</codigo>
+                <marca>Marca 1</marca>
+                <caracteristicas/>
+                <fotografia>comp1.jpg</fotografia>
+                <preco valor="5.0" tipo="litro"/>
+                <quantidade>10</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 2</nome>
+                <tipo>Tipo 2</tipo>
+                <codigo>1345</codigo>
+                <marca>Marca 2</marca>
+                <caracteristicas/>
+                <fotografia>comp2.jpg</fotografia>
+                <preco valor="10.0" tipo="unidade"/>
+                <quantidade>20</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 3</nome>
+                <tipo>Tipo 3</tipo>
+                <codigo>1454</codigo>
+                <marca>Marca 3</marca>
+                <caracteristicas/>
+                <fotografia>comp3.jpg</fotografia>
+                <preco valor="5.0" tipo="kg"/>
+                <quantidade>25</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 4</nome>
+                <tipo>Tipo 4</tipo>
+                <codigo>1466</codigo>
+                <marca>Marca 1</marca>
+                <caracteristicas/>
+                <fotografia>comp4.jpg</fotografia>
+                <preco valor="2.50" tipo="metro"/>
+                <quantidade>30</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 5</nome>
+                <tipo>Tipo 5</tipo>
+                <codigo>12436</codigo>
+                <marca>Marca 2</marca>
+                <caracteristicas/>
+                <fotografia>comp5.jpg</fotografia>
+                <preco valor="2.50" tipo="litro"/>
+                <quantidade>15</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 6</nome>
+                <tipo>Tipo 3</tipo>
+                <codigo>17654</codigo>
+                <marca>Marca 3</marca>
+                <caracteristicas/>
+                <fotografia>comp6.jpg</fotografia>
+                <preco valor="10.0" tipo="unidade"/>
+                <quantidade>5</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 7</nome>
+                <tipo>Tipo 1</tipo>
+                <codigo>13246</codigo>
+                <marca>Marca 3</marca>
+                <caracteristicas/>
+                <fotografia>comp3.jpg</fotografia>
+                <preco valor="5.0" tipo="kg"/>
+                <quantidade>40</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 8</nome>
+                <tipo>Tipo 4</tipo>
+                <codigo>1285</codigo>
+                <marca>Marca 2</marca>
+                <caracteristicas/>
+                <fotografia>comp8.jpg</fotografia>
+                <preco valor="2.50" tipo="metro"/>
+                <quantidade>45</quantidade>
+            </Componente>
+            <Componente>
+                <nome>Componente 9</nome>
+                <tipo>Tipo 4</tipo>
+                <codigo>1456</codigo>
+                <marca>Marca 3</marca>
+                <caracteristicas/>
+                <fotografia>comp8.jpg</fotografia>
+                <preco valor="2.50" tipo="litro"/>
+                <quantidade>50</quantidade>
+            </Componente>
+        </Componentes>
+        <Acessorios>
+            <Acessorio>
+                <nome>Acessorio 1</nome>
+                <tipo>Tipo A</tipo>
+                <codigo>1235</codigo>
+                <preco valor="10.0" tipo="unidade"/>
+                <quantidade>20</quantidade>
+            </Acessorio>
+            <Acessorio>
+                <nome>Acessorio 2</nome>
+                <tipo>Tipo B</tipo>
+                <codigo>1458</codigo>
+                <preco valor="15.0" tipo="litro"/>
+                <quantidade>30</quantidade>
+            </Acessorio>
+            <Acessorio>
+                <nome>Acessorio 3</nome>
+                <tipo>Tipo C</tipo>
+                <codigo>32497</codigo>
+                <preco valor="5.0" tipo="kg"/>
+                <quantidade>20</quantidade>
+            </Acessorio>
+            <Acessorio>
+                <nome>Acessorio 4</nome>
+                <tipo>Tipo D</tipo>
+                <codigo>3415</codigo>
+                <preco valor="2.50" tipo="unidade"/>
+                <quantidade>50</quantidade>
+            </Acessorio>
+        </Acessorios>
+    </Produtos>
+</Loja>
